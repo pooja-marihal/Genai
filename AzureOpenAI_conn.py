@@ -1,5 +1,5 @@
 import openai
-import os
+#import os
 from openai import AzureOpenAI
 import streamlit as st
  
