@@ -1,10 +1,11 @@
 import openai
 import os
 from openai import AzureOpenAI
+import streamlit as st
  
 # Set environment variables
-os.environ['AZURE_OPENAI_API_KEY'] = 'de87392f71a84ccaa4e62ec942c56f6c'
-os.environ['AZURE_OPENAI_ENDPOINT'] = 'https://idea-4-azure-open-ai.openai.azure.com/'
+os.environ['AZURE_OPENAI_API_KEY'] == st.secrets["AZURE_OPENAI_API_KEY"]
+os.environ['AZURE_OPENAI_ENDPOINT'] == st.secrets["AZURE_OPENAI_ENDPOINT"]
  
 # Retrieve environment variables
 api_key = os.getenv("AZURE_OPENAI_API_KEY")
