@@ -4,12 +4,9 @@ from openai import AzureOpenAI
 import streamlit as st
  
 # Set environment variables
-os.environ['AZURE_OPENAI_API_KEY'] == st.secrets["AZURE_OPENAI_API_KEY"]
-os.environ['AZURE_OPENAI_ENDPOINT'] == st.secrets["AZURE_OPENAI_ENDPOINT"]
- 
-# Retrieve environment variables
-api_key = os.getenv("AZURE_OPENAI_API_KEY")
-endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+api_key = st.secrets['AZURE_OPENAI_API_KEY']
+endpoint = st.secrets['AZURE_OPENAI_ENDPOINT']
+
  
 # Initialize the AzureOpenAI client
 client = AzureOpenAI(
