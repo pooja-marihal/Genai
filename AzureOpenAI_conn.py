@@ -15,5 +15,5 @@ endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 client = AzureOpenAI(
     azure_endpoint=endpoint,
     api_key=api_key,  
-    api_version="2024-02-01"
+    api_version="2024-05-13"
 )
